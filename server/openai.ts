@@ -7,14 +7,14 @@ const openai = process.env.OPENAI_API_KEY ? new OpenAI({
 
 // Demo mode responses for when OpenAI API key is not available
 const demoResponses = [
-  "마음이: 네 말씀 잘 들었어요. 조금 더 자세히 이야기해보실래요?",
-  "마음이: 그런 기분이 드시는군요. 언제부터 그렇게 느끼셨나요?",
-  "마음이: 충분히 이해할 수 있어요. 그럴 때는 어떤 것들이 도움이 되시나요?",
-  "마음이: 정말 힘드셨겠어요. 지금 가장 필요한 것은 무엇인가요?",
-  "마음이: 좋은 생각이에요. 그것에 대해 더 말씀해주실래요?",
-  "마음이: 그런 감정을 느끼는 것은 자연스러운 일이에요. 혼자가 아니라는 걸 기억해주세요.",
-  "마음이: 천천히 말씀해주세요. 제가 여기서 들어드릴게요.",
-  "마음이: 그런 경험을 하시는 것이 쉽지 않으셨을 것 같아요. 어떤 지원이 필요하신가요?"
+  "가온이: 네 말씀 잘 들었어요. 조금 더 자세히 이야기해보실래요?",
+  "가온이: 그런 기분이 드시는군요. 언제부터 그렇게 느끼셨나요?",
+  "가온이: 충분히 이해할 수 있어요. 그럴 때는 어떤 것들이 도움이 되시나요?",
+  "가온이: 정말 힘드셨겠어요. 지금 가장 필요한 것은 무엇인가요?",
+  "가온이: 좋은 생각이에요. 그것에 대해 더 말씀해주실래요?",
+  "가온이: 그런 감정을 느끼는 것은 자연스러운 일이에요. 혼자가 아니라는 걸 기억해주세요.",
+  "가온이: 천천히 말씀해주세요. 제가 여기서 들어드릴게요.",
+  "가온이: 그런 경험을 하시는 것이 쉽지 않으셨을 것 같아요. 어떤 지원이 필요하신가요?"
 ];
 
 function getRandomDemoResponse(): string {
@@ -40,7 +40,7 @@ export async function generateChatResponse(
   try {
     const systemMessage: ChatMessage = {
       role: 'system',
-      content: `당신은 "마음이"라는 이름의 한국어 AI 상담사입니다. 다음 지침을 따라주세요:
+      content: `당신은 "가온이"라는 이름의 한국어 AI 상담사입니다. 다음 지침을 따라주세요:
 
 1. 항상 한국어로 대화하세요
 2. 따뜻하고 공감적인 어조를 유지하세요
@@ -77,7 +77,7 @@ export async function generateVideoDiscussion(
   // Demo mode when OpenAI API key is not available
   if (!openai) {
     await new Promise(resolve => setTimeout(resolve, 1500 + Math.random() * 1000));
-    return `마음이: "${videoTitle}" 영상을 보시고 깊이 있게 성찰해주셨네요. 특히 인상 깊었던 부분이 있으셨나요? 그 순간에 어떤 감정을 느끼셨는지 더 자세히 말씀해주실래요?`;
+    return `가온이: "${videoTitle}" 영상을 보시고 깊이 있게 성찰해주셨네요. 특히 인상 깊었던 부분이 있으셨나요? 그 순간에 어떤 감정을 느끼셨는지 더 자세히 말씀해주실래요?`;
   }
 
   try {

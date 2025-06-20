@@ -291,7 +291,7 @@ export default function Video() {
                 처리 중...
               </div>
             ) : (
-              "AI 상담사와 대화하기"
+              "AI 상담사 가온이와 대화하기"
             )}
           </Button>
         </div>

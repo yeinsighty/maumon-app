@@ -272,7 +272,7 @@ export default function Assessment() {
               onClick={() => navigate("/chat")}
               className="w-full bg-gradient-to-r from-primary to-blue-600 text-white rounded-xl py-4 font-bold"
             >
-              AI 상담사와 상담하기
+              AI 상담사 가온이와 상담하기
             </Button>
             <Button
               onClick={() => navigate("/")}

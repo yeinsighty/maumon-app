@@ -88,7 +88,7 @@ export default function Landing() {
             </CardHeader>
             <CardContent>
               <p className="text-gray-600">
-                AI 상담사 마음이와 따뜻한 대화를 나누며 
+                AI 상담사 가온이와 따뜻한 대화를 나누며 
                 마음의 짐을 덜어보세요
               </p>
             </CardContent>

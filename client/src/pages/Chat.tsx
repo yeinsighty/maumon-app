@@ -194,7 +194,7 @@ export default function Chat() {
               <Bot className="h-6 w-6 text-white" />
             </div>
             <div>
-              <h2 className="font-bold text-gray-800">AI 상담사 마음이</h2>
+              <h2 className="font-bold text-gray-800">AI 상담사 가온이</h2>
               <p className="text-sm text-green-500 flex items-center">
                 <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>온라인
               </p>
@@ -219,7 +219,7 @@ export default function Chat() {
             <div className="w-16 h-16 bg-gradient-to-r from-primary to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
               <Bot className="h-8 w-8 text-white" />
             </div>
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">AI 상담사 마음이입니다</h3>
+            <h3 className="text-lg font-semibold text-gray-800 mb-2">AI 상담사 가온이입니다</h3>
             <p className="text-neutral-500 max-w-sm mx-auto">
               안녕하세요! 편안하게 대화를 시작해보세요. 어떤 마음의 이야기든 들어드릴게요.
             </p>

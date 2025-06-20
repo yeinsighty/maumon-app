@@ -14,7 +14,7 @@ export default function DemoModeIndicator() {
       <div className="flex items-center space-x-2">
         <AlertTriangle className="h-4 w-4 text-amber-600" />
         <p className="text-sm text-amber-800">
-          데모 모드 활성화 – AI 응답이 시뮬레이션됩니다
+          데모 모드 활성화 – AI 응답이 시뮬레이션됩니다 (상담사: 가온이)
         </p>
       </div>
     </div>
