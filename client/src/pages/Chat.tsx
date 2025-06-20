@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowLeft, Send, Paperclip, Mic, MoreVertical, Bot, User } from "lucide-react";
 import { useLocation } from "wouter";
-import DemoModeIndicator from "@/components/DemoModeIndicator";
+
 
 interface Message {
   id: number;
@@ -176,7 +176,6 @@ export default function Chat() {
 
   return (
     <div className="min-h-screen bg-neutral-50 flex flex-col">
-      <DemoModeIndicator />
       {/* Chat Header */}
       <div className="bg-white shadow-sm border-b border-neutral-200 px-6 py-4">
         <div className="flex items-center space-x-4">

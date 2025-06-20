@@ -11,6 +11,9 @@ import Chat from "@/pages/Chat";
 import Video from "@/pages/Video";
 import Assessment from "@/pages/Assessment";
 import SplashScreen from "@/components/SplashScreen";
+import BottomNavigation from "@/components/BottomNavigation";
+import DemoModeIndicator from "@/components/DemoModeIndicator";
+import CharacterIcon from "@/components/CharacterIcon";
 import { useState, useEffect } from "react";
 
 function Router() {
@@ -30,19 +33,30 @@ function Router() {
   }
 
   return (
-    <Switch>
-      {isLoading || !isAuthenticated ? (
-        <Route path="/" component={Landing} />
-      ) : (
+    <>
+      <Switch>
+        {isLoading || !isAuthenticated ? (
+          <Route path="/" component={Landing} />
+        ) : (
+          <>
+            <Route path="/" component={Home} />
+            <Route path="/chat/:id?" component={Chat} />
+            <Route path="/video/:id?" component={Video} />
+            <Route path="/assessment" component={Assessment} />
+          </>
+        )}
+        <Route component={NotFound} />
+      </Switch>
+      
+      {/* Global Components */}
+      {isAuthenticated && (
         <>
-          <Route path="/" component={Home} />
-          <Route path="/chat/:id?" component={Chat} />
-          <Route path="/video/:id?" component={Video} />
-          <Route path="/assessment" component={Assessment} />
+          <DemoModeIndicator />
+          <BottomNavigation />
+          <CharacterIcon />
         </>
       )}
-      <Route component={NotFound} />
-    </Switch>
+    </>
   );
 }
 

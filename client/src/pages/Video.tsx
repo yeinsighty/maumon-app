@@ -10,7 +10,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, Play, Clock, Eye, Calendar, ChevronDown, ChevronUp, MoreVertical } from "lucide-react";
 import VideoPlayer from "@/components/VideoPlayer";
-import DemoModeIndicator from "@/components/DemoModeIndicator";
+
 
 interface Video {
   id: number;
@@ -184,7 +184,6 @@ export default function Video() {
 
   return (
     <div className="min-h-screen bg-black">
-      <DemoModeIndicator />
       {/* Video Header */}
       <div className="bg-black/80 backdrop-blur-sm text-white px-6 py-4 absolute top-0 left-0 right-0 z-10">
         <div className="flex items-center justify-between">
